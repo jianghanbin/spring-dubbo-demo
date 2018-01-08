@@ -10,7 +10,6 @@ public class AppApplication {
     public static void main(String[] args) {
         try {
             ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath:spring-dubbo-provider.xml");
-            System.out.println();
             context.start();
         } catch (Exception e) {
             e.printStackTrace();
